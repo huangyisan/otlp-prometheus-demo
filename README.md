@@ -24,6 +24,6 @@ python app-generator.py
 ```
 It will be used in generating request for the Flask application at the different endpoints.
 
-5. Send the metrics to a monitoring tool for visualization. You can do this with OpenTelemetry and SigNoz, read the article here.
+5. Send the metrics to a monitoring tool for visualization. You can do this with OpenTelemetry and SigNoz, read the article [here](https://signoz.io/blog/opentelemetry-collector-prometheus-receiver/).
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cbzf58qelvvm2tmb4mn6.png)
