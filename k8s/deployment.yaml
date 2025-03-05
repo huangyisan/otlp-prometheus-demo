@@ -21,3 +21,6 @@ spec:
           ports:
             - containerPort: 5000
               name: http-metric
+          command:
+            - python
+            - app.py
