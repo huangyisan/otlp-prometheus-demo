@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otlp-prometheus-demo
+spec:
+  selector:
+    matchLabels:
+      app: otlp-prometheus-demo
+  template:
+    metadata:
+      labels:
+        app: otlp-prometheus-demo
+    spec:
+      containers:
+        - name: otlp-prometheus-demo
+          image: dockerhuangyisan/otlp-prometheus-daemon:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 5000
+              name: http-metric
